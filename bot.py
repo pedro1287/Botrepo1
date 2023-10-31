@@ -1208,7 +1208,7 @@ async def upload_rev(path,usid,msg,username):
     zipssize = 1024*1024*int(19)
     size = os.path.getsize(path)/(1024 * 1024)
     size = round(size, 2)
-    if filesize-1048>zipssize:
+    if filesize-1048<zipssize:
         urls = " "
         await msg.edit("**Iniciando Sesión...**")
         async with aiohttp.ClientSession() as session:
