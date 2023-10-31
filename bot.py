@@ -6,7 +6,7 @@ import tgcrypto
 import aiohttp
 import aiohttp_socks
 import os
-import aiohttp
+#import aiohttp
 import re
 import requests
 import json
@@ -34,7 +34,7 @@ from yarl import URL
 from bs4 import BeautifulSoup
 from io import BufferedReader
 from io import FileIO
-from aiohttp import ClientSession
+#from aiohttp import ClientSession
 from py7zr import SevenZipFile
 from py7zr import FILTER_COPY
 from zipfile import ZipFile
