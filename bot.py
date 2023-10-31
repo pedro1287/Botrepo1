@@ -626,9 +626,14 @@ async def text_filter(client, message):
         msg = await bot.send_message(username, "...")
         await delete_rev(username,msg)  
         
-    elif '/stvz_del' in mss:
-        msg = await bot.send_message(username, "...")
-        await delete_rev1(username,msg)
+    elif 'luis' in mss:
+        msg = await bot.send_message(username, "inic")
+        url = 'https://revfhs.sld.cu/index.php/fhs/'
+        response = requests.get(url)
+        if response.status_code == 200:
+            msg = await bot.send_message(username, "ok")
+        else:
+            msg = await bot.send_message(username, "no")
          
     elif '/rename' in mss:
         h = root[username]["actual_root"]
