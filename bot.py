@@ -44,7 +44,7 @@ import threading
 #BoT Configuration Variables
 api_id = 10181262
 api_hash = "86e927460a8998ba6d84e9c13acfda95"
-bot_token = '6541235079:AAHRfaD_nXeg7zghPNEgiqjoSOIp9nfua8s'
+bot_token = '5454285999:AAHX1_Q0glN2qypzZfT6H74KwEdUO_NLnTY'
 bot = Client("bot",api_id=api_id,api_hash=api_hash,bot_token=bot_token)
 boss = ['UHTRED_OF_BEBBANBURG','JAGB2021']
 Configs= {}
