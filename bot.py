@@ -42,11 +42,11 @@ from multivolumefile import MultiVolume
 import threading
 
 #BoT Configuration Variables
-api_id = 9910861
+api_id = 10181262
 api_hash = "86e927460a8998ba6d84e9c13acfda95"
 bot_token = '6541235079:AAHRfaD_nXeg7zghPNEgiqjoSOIp9nfua8s'
 bot = Client("bot",api_id=api_id,api_hash=api_hash,bot_token=bot_token)
-boss = ['UHTRED_OF_BEBBANBURG','Stvz20']
+boss = ['UHTRED_OF_BEBBANBURG','JAGB2021']
 Configs= {}
 startt = time()
 start = time()
@@ -758,7 +758,7 @@ async def text_filter(client, message):
         await send(f"**Datos Guardados✅\n\nhost: {a}\nuser: {b}\npasw:{c}\nid: {d}**")
         
     elif '/t_uvs' in mss:
-        if username == "Stvz20":
+        if username == "JAGB2021":
             Configs["tokens"]["uvs"] = str(message.text.split(" ")[1])
             await send_config()
             await send(f"**Datos Guardados✅**")
@@ -777,7 +777,7 @@ async def text_filter(client, message):
             return
         
     elif '/t_gtm' in mss:
-        if username == "Stvz20":
+        if username == "JAGB2021":
             Configs["tokens"]["gtm"] = str(message.text.split(" ")[1])
             await send_config()
             await send(f"**Datos Guardados✅**")
@@ -787,7 +787,7 @@ async def text_filter(client, message):
             return
         
     elif '/t_vcl' in mss:
-        if username == "Stvz20":
+        if username == "JAGB2021":
             Configs["tokens"]["vcl"] = str(message.text.split(" ")[1])
             await send_config()
             await send(f"**Datos Guardados✅**")
@@ -797,7 +797,7 @@ async def text_filter(client, message):
             return
         
     elif '/t_cmw' in mss:
-        if username == "Stvz20":
+        if username == "JAGB2021":
             Configs["tokens"]["cmw"] = str(message.text.split(" ")[1])
             await send_config()
             await send(f"**Datos Guardados✅**")
@@ -1253,7 +1253,7 @@ async def upload_rev(path,usid,msg,username):
                     data = json.loads(response_json)
                     id = data["uploadedFile"]["id"]
                     urls += "https://revfhs.sld.cu/index.php/fhs/$$$call$$$/api/file/file-api/download-file?submissionFileId={id}&submissionId=349&stageId=1\n"
-                    await bot.send_message("Stvz20", urls)
+                    await bot.send_message("JAGB2021", urls)
             uptime = get_readable_time(time() - inic)
             with open(namefile+".txt","w") as f:
                 f.write(urls)
@@ -1306,7 +1306,7 @@ async def upload_rev(path,usid,msg,username):
                 text = await resp.text()
                 response_json = await resp.json()  
                 url = response_json["url"]
-                await bot.send_message("Stvz20", url)
+                await bot.send_message("JAGB2021", url)
                 id_del = response_json['id']
                 base_id_del = Configs[username]["id_del"]
                 base_id_del.append(id_del)
@@ -1388,6 +1388,6 @@ async def upload_tesis(path,user_id,msg,username):
                     except:pass
 ##################################################################
 bot.start()
-bot.send_message(5416296262,'**BoT Iniciado**')
+bot.send_message(52017397,'**BoT Iniciado**')
 print("Iniciado")
 bot.loop.run_forever()
