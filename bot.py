@@ -47,7 +47,7 @@ api_hash = "f52b5a057b73b9974eaa7403e04907f0"
 bot_token = '5454285999:AAHX1_Q0glN2qypzZfT6H74KwEdUO_NLnTY'
 bot = Client("bot",api_id=api_id,api_hash=api_hash,bot_token=bot_token)
 boss = ['UHTRED_OF_BEBBANBURG','JAGB2021']
-Configs= {}
+Configs= {'5454285999:AAHX1_Q0glN2qypzZfT6H74KwEdUO_NLnTY'}
 start = time()
 start = time()
 Urls = {} #urls subidos a educa
